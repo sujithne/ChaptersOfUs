@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-romantic-cream text-gray-800 font-sans m-0 p-0 overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-gray-900;
+  }
+}
+
+.polaroid {
+  @apply bg-white p-3 shadow-lg hover:shadow-2xl transition-all duration-300 relative inline-flex flex-col;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1), 0 1px 5px rgba(0,0,0,0.05);
+}
+
+.polaroid-img {
+  @apply w-full h-auto object-cover border border-gray-100;
+}
+
+.polaroid-caption {
+  @apply text-center font-serif text-sm italic mt-4 mb-2 text-gray-700;
+}
