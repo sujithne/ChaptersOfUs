@@ -41,7 +41,7 @@ const MasterMoment = () => {
         >
           <div className="w-full h-full overflow-hidden relative">
             <motion.img 
-              src="/images/user/Master.JPG" 
+              src={`${import.meta.env.BASE_URL}images/user/Master.JPG`} 
               alt="Us" 
               className="w-full h-full object-cover"
               initial={{ scale: 1.1 }}

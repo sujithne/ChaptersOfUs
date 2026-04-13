@@ -16,7 +16,7 @@ const ChapterLayout = ({ chapter, index }) => {
           transition={{ duration: 1.5 }}
         >
           <img 
-            src={chapter.genericImage} 
+            src={`${import.meta.env.BASE_URL}${chapter.genericImage.substring(1)}`}
             alt="Atmosphere" 
             className="w-full h-full object-cover object-center"
           />
@@ -68,7 +68,7 @@ const ChapterLayout = ({ chapter, index }) => {
                   <div className="polaroid w-48 md:w-64 max-w-[80vw] bg-white p-3 shadow-xl flex flex-col">
                     <div className="aspect-[3/4] overflow-hidden bg-gray-200">
                       <img 
-                        src={photo.src} 
+                        src={`${import.meta.env.BASE_URL}${photo.src.substring(1)}`}
                         alt={photo.caption} 
                         className="w-full h-full object-cover border border-gray-100"
                         onError={(e) => {

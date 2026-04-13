@@ -14,7 +14,7 @@ const LandingPage = () => {
         transition={{ duration: 2, ease: "easeOut" }}
       >
         <img 
-          src="/images/generic/landing-bg.jpg" 
+          src={`${import.meta.env.BASE_URL}images/generic/landing-bg.jpg`} 
           alt="Landing Background" 
           className="w-full h-full object-cover"
         />
@@ -27,7 +27,7 @@ const LandingPage = () => {
       {/* Content */}
       <div className="z-20 text-center text-white px-6">
         <motion.h1 
-          className="text-5xl md:text-7xl font-serif font-bold mb-4 tracking-wide shadow-black drop-shadow-2xl"
+          className="text-5xl md:text-7xl font-serif font-bold mb-4 tracking-wide shadow-black drop-shadow-2xl text-romantic-cream"
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
